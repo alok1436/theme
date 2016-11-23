@@ -1,0 +1,144 @@
+/*
+Theme Name: Food Lounge
+Author: Team Storm Chaser
+Description: Bootstrap Blog template converted to WordPress
+Version: 1.0.0
+Tags: bootstrap
+*/
+body{
+  font-family: "Open Sans",sans-serif;
+}
+.fa-stack {
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  vertical-align: middle;
+  width: 20px;
+}
+.fa-stack-2x {
+  font-size: 20px;
+}
+.fa-stack-1x {
+  font-size: 12px;
+}
+.social-share a {
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 25px;
+}
+.food-header-1 .navbar-brand {
+  padding: 0;
+}
+.food-main-header .navbar-nav > li {
+  padding: 5px 15px;
+}
+.food-main-header .navbar-nav > li > a {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 600;
+  padding: 10px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.food-main-header .navbar-nav > li > a::before {
+  background-color: #c9a44c;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 0.2s ease 0s;
+  width: 0;
+}
+.food-main-header .navbar-nav > li.current-menu-item > a,.food-main-header .navbar-nav > li > a:hover, .food-main-header .navbar-nav > li > a:active {
+  color: #c9a44c;
+}
+.food-main-header .navbar-nav > li.current-menu-item > a::before, .food-main-header .navbar-nav > li > a:hover::before {
+  width: 100%;
+}
+.food-header-2 .navbar {
+  margin: 0;
+}
+.food-header-2 .navbar-header {
+  display: table;
+  float: none;
+  margin: 0 auto;
+}
+.food-header-2 .navbar-brand {
+  float: none;
+  padding: 0;
+}
+.food-header-2 .navbar-center {
+  display: table;
+  margin: 0 auto;
+  float: none;
+}
+#food-header-1 {
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+}
+#food-header-1 .navbar-toggle .icon-bar {
+  background-color: #c9a44c;
+}
+#food-header-2 .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+@media(min-width:769px) and (max-width:1024px){
+.food-main-header .navbar-nav > li {
+  padding: 25px 10px;
+}
+}
+@media(max-width:768px){
+	.site-header .navbar-header {
+	  display: table;
+	  float: none;
+	  margin: 2em auto;
+	}
+	.site-header .navbar-right {
+	  display: table;
+	  float: none !important;
+	  margin: 2em auto;
+	}
+	.food-main-header .navbar-nav > li > a::before {
+	  bottom: 0;
+	}
+}
+@media(max-width:767px){
+	.site-header .navbar-right {
+	  background-color: rgba(0, 0, 0, 0.5);
+	  display: block;
+	  margin: 0;
+	  text-align: center;
+	}
+	.site-header .navbar-header {
+	  display: block;
+	}
+	#food-header-top-first, #food-header-top-second .social-share {
+	  text-align: center;
+	}
+	.site-header .navbar-brand {
+	  display: table;
+	  margin: 0 auto;
+	}
+	#food-header-navbar-2{
+	  position: absolute;
+	  width: 100%;
+	  z-index: 99;
+	}
+	.food-header-2 .navbar-center {
+	  display: block;
+	  text-align: center;
+	}
+}
+@media(max-width:440px){
+	#food-header-top-first a {
+	  display: block;
+	}
+}
